@@ -1,18 +1,22 @@
 Introduction to Artificial Intelligence - LAB 4
 ISEP – May 4, 2022
+
 Instructions: Prepare a report including the source code and the
 results. Submit the report on moodle until May 11, 23:59.
 Remark: This lab will be done using Python 3.6.
+
 The objective of this lab is to program and test two classification algorithms,
 very simple but very effective: the K-Nearest Neighbor (KNN) algorithm and the
 Classifier Bayesian Naive (CBN). We are studying here only the simplest versions
 of these algorithms. For this lab we will need to import sklearn and numpy. The
 tests can be done on sklearn’s predefined data that comes with their class labels
 (target), for example:
+
 iris = datasets.load_iris ()
 X = iris.data
 Y = iris.target
 A Nearest neighbor
+
 The Nearest Neighbor algorithm is a very simple classification algorithm which is
 based on the following principle: the class of each test data (to be classified) must
 be the class of the closest (most similar) data among the training data. List of
@@ -35,6 +39,7 @@ Are the results different? Test with other values of K.
 5. BONUS: Modify the TNN function so that it takes as input a number K of
 neighbors (instead of 1). The predicted class will then be the majority class
 among the K neighbors.
+
 B Naive Bayesian classifier
 The Naive Bayesian Classifier algorithm is a classification algorithm based on
 calculating the probability of belonging to each class. That is to say that the test
